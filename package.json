@@ -2,7 +2,7 @@
 	"name": "mtd-snippets",
 	"displayName": "MTD Snippets",
 	"description": "mtd tag snippets",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "yangware",
 	"icon": "images/icon.png",
 	"engines": {
