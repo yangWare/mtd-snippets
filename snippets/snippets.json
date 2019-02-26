@@ -1,0 +1,387 @@
+{
+	"mtd-button": {
+		"prefix": "mtdbtn",
+		"body": [
+			"<mtd-button type=\"primary\">$1</mtd-button>"
+		],
+	  "description": "mtd button"
+	},
+	"mtd-input": {
+		"prefix": "mtdinput",
+		"body": [
+			"<mtd-input",
+			"\tv-model=\"inputvalue\"",
+			"\tplaceholder=\"占位说明\"",
+			">",
+			"</mtd-input>"
+		],
+	  "description": "mtd input"
+	},
+	"mtd-textarea": {
+		"prefix": "mtdtextarea",
+		"body": [
+			"<mtd-textarea",
+			"\tv-model=\"${1:value}\"",
+			"\tplaceholder=\"${2:输入内容不超过50个字符}\"",
+			"\trows=\"${3:3}\"",
+			"\tmaxlength=\"${4:50}\"",
+			">",
+			"</mtd-textarea>"
+		],
+	  "description": "mtd textarea"
+	},
+	"mtd-radio": {
+		"prefix": "mtdradio",
+		"body": [
+			"<mtd-radio value=\"${1:radioValue}\">$2</mtd-radio>"
+		],
+	  "description": "mtd radio"
+	},
+	"mtd-radio-group": {
+		"prefix": "mtdgroupradio",
+		"body": [
+			"<mtd-radio-group v-model=\"$1\">",
+			"$2",
+			"</mtd-radio-group>"
+		],
+	  "description": "mtd group radio"
+	},
+	"mtd-checkbox": {
+		"prefix": "mtdcheckbox",
+		"body": [
+			"<mtd-checkbox v-model=\"$1\">$2</mtd-checkbox>"
+		],
+	  "description": "mtd checkbox"
+	},
+	"mtd-group-checkbox": {
+		"prefix": "mtdgroupcheckbox",
+		"body": [
+			"<mtd-checkbox value=\"$1\">$2</mtd-checkbox>"
+		],
+	  "description": "mtd checkbox for group"
+	},
+	"mtd-checkbox-group": {
+		"prefix": "mtdcheckboxgroup",
+		"body": [
+			"<mtd-checkbox-group v-model=\"$1\">",
+			"$2",
+			"</mtd-checkbox-group>"
+		],
+	  "description": "mtd checkbox group"
+	},
+	"mtd-date-picker": {
+		"prefix": "mtddatepicker",
+		"body": [
+			"<mtd-date-picker",
+			"\tv-model=\"$1\"",
+			"\ttype=\"date\"",
+			"\tplaceholder=\"${2:选择日期}\"",
+			">",
+			"</mtd-date-picker>"
+		],
+	  "description": "mtd date picker"
+	},
+	"mtd-time-picker": {
+		"prefix": "mtdtimepicker",
+		"body": [
+			"<mtd-date-picker",
+			"\tv-model=\"$1\"",
+			"\ttype=\"time\"",
+			"\tplaceholder=\"${2:选择时间}\"",
+			">",
+			"</mtd-time-picker>"
+		],
+	  "description": "mtd time picker"
+	},
+	"mtd-table": {
+		"prefix": "mtdtable",
+		"body": [
+			"<mtd-table :data=\"${1:tableData}\">",
+			"\t<mtd-table-column",
+			"\t\tprop=\"$2\"",
+			"\t\tlabel=\"$3\"",
+			"\t>",
+			"\t</mtd-table-column>",
+			"</mtd-table>"
+		],
+	  "description": "mtd table template"
+	},
+	"mtd-table-column": {
+		"prefix": "mtdtablecol",
+		"body": [
+			"<mtd-table-column",
+			"\tprop=\"$1\"",
+			"\tlabel=\"$2\"",
+			">",
+			"</mtd-table-column>"
+		],
+	  "description": "mtd table column template"
+	},
+	"mtd-table-column-slot": {
+		"prefix": "mtdtablecolslot",
+		"body": [
+			"<mtd-table-column",
+			"\tprop=\"$1\"",
+			"\tlabel=\"$2\"",
+			">",
+			"\t<template slot-scope=\"scope\">",
+			"\t\t${3:{{scope.row}}}",
+			"\t</template>",
+			"</mtd-table-column>"
+		],
+	  "description": "mtd table column slot template"
+	},
+	"vue-slot-template": {
+		"prefix": "slottemplate",
+		"body": [
+			"<template slot-scope=\"scope\">",
+			"${1:{{scope}}}",
+			"</template>"
+		],
+	  "description": "slot template"
+	},
+	"mtd-form": {
+		"prefix": "mtdform",
+		"body": [
+			"<mtd-form",
+			"\t:model=\"$1\"",
+			"\tref=\"form\"",
+			"\t:rule=\"formRules\"",
+			">",
+			"$2",
+			"</mtd-form>"
+		],
+	  "description": "mtd form"
+	},
+	"mtd-form-item": {
+		"prefix": "mtdformitem",
+		"body": [
+			"<mtd-form-item",
+			"\tlabel=\"$1\"",
+			"\tprop=\"$2\"",
+			">",
+			"$3",
+			"</mtd-form-item>"
+		],
+	  "description": "mtd form item"
+	},
+	"mtd-form-item-input": {
+		"prefix": "mtdformiteminput",
+		"body": [
+			"<mtd-form-item",
+			"\tlabel=\"$1\"",
+			"\tprop=\"$2\"",
+			">",
+			"\t<mtd-input",
+			"\t\tv-model=\"$1\"",
+			"\t\tplaceholder=\"$2\"",
+			"\t>",
+			"\t</mtd-input>",
+			"</mtd-form-item>"
+		],
+	  "description": "mtd form item input"
+	},
+	"mtd-select": {
+		"prefix": "mtdselect",
+		"body": [
+			"<mtd-select",
+			"\tv-model=\"${1:selectValue}\"",
+			">",
+			"</mtd-select>"
+		],
+	  "description": "mtd select"
+	},
+	"mtd-option": {
+		"prefix": "mtdoption",
+		"body": [
+			"<mtd-option",
+			"\tv-for=\"(value, index) in $1\"",
+			"\t:label=\"${2:value}\"",
+			"\t:value=\"${3:value}\"",
+			"\t:key=\"index\"",
+			">",
+			"</mtd-option>"
+		],
+	  "description": "mtd option"
+	},
+	"mtd-form-item-textarea": {
+		"prefix": "mtdformitemtextarea",
+		"body": [
+			"<mtd-form-item",
+			"\tlabel=\"$1\"",
+			"\tprop=\"$2\"",
+			">",
+			"\t<mtd-textarea",
+			"\t\tv-model=\"$3\"",
+			"\t\tplaceholder=\"$4\"",
+			"\t\t:row=\"${5:3}\"",
+			"\t\t:maxength=\"${6:500}\"",
+			"\t>",
+			"\t</mtd-textarea>",
+			"</mtd-form-item>"
+		],
+	  "description": "mtd form item input"
+	},
+	"mtd-popover": {
+		"prefix": "mtdpopover",
+		"body": [
+			"<mtd-popover",
+			"\ttrigger=\"${1:hover}\"",
+			"\tplacement=\"${2:top}\"",
+			">",
+			"</mtd-popover>"
+		],
+	  "description": "mtd popover"
+	},
+	"mtd-modal": {
+		"prefix": "mtdmodal",
+		"body": [
+			"<mtd-modal",
+			"\tv-model=\"$1\"",
+			"\ttitle=\"$2\"",
+			">",
+			"$3",
+			"</mtd-modal>"
+		],
+	  "description": "mtd modal"
+	},
+	"mtd-tabs": {
+		"prefix": "mtdtabs",
+		"body": [
+			"<mtd-tabs v-model=\"${1:activeTab}\">",
+			"\t$2",
+			"</mtd-tabs>"
+		],
+	  "description": "mtd tabs"
+	},
+	"mtd-tab-pane": {
+		"prefix": "mtdtabpane",
+		"body": [
+			"<mtd-tab-pane",
+			"\tlabel=\"${1:tabLabel}\">",
+			"\tvalue=\"${2:tabValue}\"",
+			">",
+			"$3",
+			"</mtd-tab-pane>"
+		],
+	  "description": "mtd tabs"
+	},
+	"mtd-pagination": {
+		"prefix": "mtdpagination",
+		"body": [
+			"<mtd-pagination",
+			"\t:total=\"${1:total}\"",
+			"\t:current-page.sync=\"${3:page}\"",
+			"\t:page-size.sync=\"${4:pageSize}\"",
+			"\tshow-size-changer",
+			"\tshow-total",
+			"\t@change=\"${2:query}\"",
+			">",
+			"</mtd-pagination>"
+		],
+	  "description": "mtd pagination template"
+	},
+	"mtd-badge": {
+		"prefix": "mtdbadge",
+		"body": [
+			"<mtd-badge :value=\"${1:1}\">",
+			"$2",
+			"</mtd-badge>"
+		],
+	  "description": "mtd badge"
+	},
+	"mtd-switch": {
+		"prefix": "mtdswitch",
+		"body": [
+			"<mtd-switch v-model=\"${2:value}\"></mtd-switch>"
+		],
+	  "description": "mtd switch"
+	},
+	"mtd-steps": {
+		"prefix": "mtdsteps",
+		"body": [
+			"<mtd-steps :active=\"${1:activeStep}\">",
+			"$2",
+			"</mtd-steps>"
+		],
+	  "description": "mtd group radio"
+	},
+	"mtd-step": {
+		"prefix": "mtdstep",
+		"body": [
+			"<mtd-step title=\"${1:步骤 1}\"></mtd-step>"
+		],
+	  "description": "mtd step"
+	},
+	"mtd-collapse": {
+		"prefix": "mtdcollapse",
+		"body": [
+			"<mtd-collapse v-model=\"$1\">",
+			"$2",
+			"</mtd-collapse>"
+		],
+	  "description": "mtd collapse"
+	},
+	"mtd-collapse-item": {
+		"prefix": "mtdcollapseitem",
+		"body": [
+			"<mtd-collapse-item",
+			"\ttitle=\"$1\"",
+			"\tvalue=\"${2:1}\"",
+			">",
+			"$3",
+			"</mtd-collapse-item>"
+		],
+	  "description": "mtd collapse item"
+	},
+	"mtd-progress": {
+		"prefix": "mtdprogress",
+		"body": [
+			"<mtd-progress :percentage=\"${1:value}\"></mtd-progress>"
+		],
+	  "description": "mtd progress"
+	},
+	"mtd-announcement": {
+		"prefix": "mtdannouncement",
+		"body": [
+			"<mtd-announcement",
+			"\ttitle=\"${1:成功信息}\"",
+			"\ttype=\"${2:success}\"",
+			"\tshow-icon",
+			">",
+			"</mtd-announcement>"
+		],
+	  "description": "mtd announcement"
+	},
+	"mtd-tooltip": {
+		"prefix": "mtdtooltip",
+		"body": [
+			"<mtd-tooltip content=\"$1\">",
+			"\t$2",
+			"</mtd-tooltip>"
+		],
+	  "description": "mtd tooltip"
+	},
+	"mtd-slider": {
+		"prefix": "mtdslider",
+		"body": [
+			"<mtd-slider v-model=\"${1:value}\"></mtd-slider>"
+		],
+	  "description": "mtd slider"
+	},
+	"mtd-breadcrumb": {
+		"prefix": "mtdbreadcrumb",
+		"body": [
+			"<mtd-breadcrumb>",
+			"\t<mtd-breadcrumb-item",
+			"\t\ttag=\"${1:router-link}\"",
+			"\t\tto=\"${2:/}\"",
+			"\t>",
+			"\t${3:面包屑1}",
+			"\t</mtd-breadcrumb-item>",
+			"\t$4",
+			"</mtd-breadcrumb>"
+		],
+	  "description": "mtd breadcrumb"
+	}
+}
