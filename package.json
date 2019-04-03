@@ -5,6 +5,9 @@
 	"version": "0.0.2",
 	"publisher": "yangware",
 	"icon": "images/icon.png",
+	"scripts": {
+		"build": "vsce package"
+	},
 	"engines": {
 		"vscode": "^1.9.1"
 	},
